@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 terraform {
-  
+
 
   required_providers {
     aws = {
@@ -15,7 +15,7 @@ terraform {
 
 terraform {
   required_version = ">= 1.5.0"
-  
+
   backend "s3" {
     bucket = "sctp-ce11-tfstate"
     key    = "sridhar-s3-tf-ci.tfstate" #Change this
